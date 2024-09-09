@@ -67,6 +67,11 @@ endif::agnostic[]
 
 You can customize the `install-config.yaml` file to specify more details about your {product-title} cluster's platform or modify the values of the required parameters.
 
+[NOTE]
+====
+In the below example, `network.machineNetwork` is excluded, as it is assumed that the network will be provided by end user during the installation process. Installer never asks for `network.machineNetwork` value.
+====
+
 [source,yaml,subs="attributes+"]
 ----
 apiVersion: v1
